@@ -7,14 +7,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="hotdrinks.html" class="nav-link">Hot Drinks</a>
-      <a href="iceddrinks.html" class="nav-link">Iced Drinks</a>
-    </div>
-  </nav>
 
   <header>
     <div class="hero-image">
@@ -25,6 +17,15 @@
       </div>
     </div>
   </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="hotdrinks.html" class="nav-link">Hot Drinks</a>
+      <a href="iceddrinks.html" class="nav-link">Iced Drinks</a>
+    </div>
+  </nav>
 
   <!-- Hot Drinks Section -->
   <section class="coffee-section">
@@ -37,6 +38,19 @@
     <h2>Iced Coffees</h2>
     <div id="iced-coffee-list" class="coffee-list"></div>
   </section>
+
+  <!-- Modal Structure -->
+  <div id="coffee-modal" class="modal">
+    <div class="modal-content">
+      <img id="modal-coffee-image" src="" alt="">
+      <h2 id="modal-coffee-title"></h2>
+      <p id="modal-coffee-description"></p>
+      <p class="ingredients"><strong>Ingredients:</strong> <span id="modal-coffee-ingredients"></span></p>
+      <div class="action-buttons">
+        <span id="close-modal" class="close-btn"><button class="add-to-cart-btn">Close</button></span>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="container">

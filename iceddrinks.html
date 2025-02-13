@@ -7,28 +7,42 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="hero-image">
-          <img src="https://i0.wp.com/urbnexplorer.com/wp-content/uploads/2018/01/2018-01-30-pickwick-place-04.jpg?w=1200&ssl=1" alt="Coffee Beans" />
-          <div class="hero-text">
-            <h1>Iced Coffees</h1>
-            <p>Cool down with our selection of iced coffees.</p>
-          </div>
-        </div>
-      </header>
-            <!-- Navigation Bar -->
-            <nav class="navbar">
-                <div class="container">
-                  <a href="index.html" class="nav-link">Home</a>
-                  <a href="hotdrinks.html" class="nav-link">Hot Drinks</a>
-                  <a href="iceddrinks.html" class="nav-link">Iced Drinks</a>
-                </div>
-              </nav>
+  <header>
+    <div class="hero-image">
+      <img src="https://i0.wp.com/urbnexplorer.com/wp-content/uploads/2018/01/2018-01-30-pickwick-place-04.jpg?w=1200&ssl=1" alt="Coffee Beans" />
+      <div class="hero-text">
+        <h1>Iced Coffees</h1>
+        <p>Cool down with our selection of iced coffees.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="hotdrinks.html" class="nav-link">Hot Drinks</a>
+      <a href="iceddrinks.html" class="nav-link">Iced Drinks</a>
+    </div>
+  </nav>
 
   <section class="coffee-section">
     <h2>Iced Coffee Menu</h2>
     <div id="coffee-list" class="coffee-list"></div>
   </section>
+
+  <!-- Modal Structure -->
+  <div id="coffee-modal" class="modal">
+    <div class="modal-content">
+      <img id="modal-coffee-image" src="" alt="">
+      <h2 id="modal-coffee-title"></h2>
+      <p id="modal-coffee-description"></p>
+      <p class="ingredients"><strong>Ingredients:</strong> <span id="modal-coffee-ingredients"></span></p>
+      <div class="action-buttons">
+        <span id="close-modal" class="close-btn"><button class="add-to-cart-btn">Close</button></span>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="container">
@@ -36,7 +50,6 @@
     </div>
   </footer>
 
-  <!-- Use script.js for functionality -->
   <script src="iceddrinks.js"></script>
 </body>
 </html>
