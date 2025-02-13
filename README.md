@@ -5,6 +5,7 @@
 ## Project Structure
 
 ```
+```markdown
 /project-folder
   ├── index.html         # Your main HTML file
   ├── hotdrinks.html     # File that displays hot drinks from our API
