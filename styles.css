@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  background-color: #6f4f37;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #4e3624;
+  border-radius: 4px;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 40% opacity */
+  z-index: 1; /* Make sure the overlay is below the text */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 0; /* Ensure the image stays in the background */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.filter-buttons button {
+  background-color: #6f4f37;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+.filter-buttons button:hover {
+  background-color: #4e3624;
+}
+
+.coffee-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #6f4f37;
+  margin-bottom: 20px;
+}
+
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coffee-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+}
+
+.coffee-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.coffee-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #6f4f37;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
