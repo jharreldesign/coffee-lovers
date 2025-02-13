@@ -4,33 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Detail - Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="coffee-detail.css">
 </head>
 <body>
-
-
+  <!-- Hero Image Section -->
   <header>
     <div class="hero-image">
       <img src="https://i0.wp.com/urbnexplorer.com/wp-content/uploads/2018/01/2018-01-30-pickwick-place-04.jpg?w=1200&ssl=1" alt="Coffee Beans" />
       <div class="hero-text">
-        <h1>Welcome to Our Coffee Shop</h1>
-        <p>Discover our selection of delicious hot and iced coffees!</p>
+        <h1 id="coffee-title">Coffee Details</h1> <!-- Placeholder for coffee name -->
+        <!-- <p>Get to know more about your favorite coffee!</p> -->
       </div>
     </div>
   </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="hotdrinks.html" class="nav-link">Hot Drinks</a>
-          <a href="iceddrinks.html" class="nav-link">Iced Drinks</a>
-        </div>
-      </nav>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="hotdrinks.html" class="nav-link">Hot Drinks</a>
+      <a href="iceddrinks.html" class="nav-link">Iced Drinks</a>
+    </div>
+  </nav>
 
   <!-- Coffee Detail Section -->
-  <section class="coffee-detail">
-    <div id="coffee-detail-container"></div>
+  <section class="coffee-detail-container">
+    <!-- Sidebar: List of Other Coffees -->
+    <aside class="coffee-sidebar">
+      <h3>Other Hot Coffees</h3>
+      <ul id="other-coffees-list"></ul>
+    </aside>
+
+    <div class="coffee-detail">
+      <div id="coffee-detail-container"></div>
+    </div>
   </section>
 
   <footer>
